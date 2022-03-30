@@ -1,0 +1,281 @@
+/* CSS général des pages */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: medium;
+  background: rgb(48, 48, 138);
+  color: #ffeded;
+}
+
+.webgl
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+/* CSS divisions et sections */
+.section
+{
+  width: 87%;
+  height: 60%;
+  padding-left: 2%;
+  padding-right: 10%;
+  z-index: 1;
+  position: relative;
+}
+
+.projet{
+  margin: auto;
+  margin-top: 3%;
+  width: 93vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.pro_left{
+  display: flex;
+  flex-direction: column;
+  width: 31vw;
+}
+
+.pro_right{
+  display: flex;
+  flex-direction: column;
+  width: 62vw;
+  justify-content: center;
+}
+
+.right_bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+
+.bottom.left{
+  display: flex;
+  flex-direction: row;
+}
+
+/* CSS des textes */
+.titre{
+  font-size: xx-large;
+  text-align: center;
+}
+
+h1{
+  text-decoration: underline;
+  font-size: x-large;
+}
+  
+h2{
+  font-size: large;
+}
+
+h3{
+  font-size: medium;
+}
+
+/* CSS des boutons */
+.button1 {
+  margin-left: 2%;
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: medium;
+  background-color: rgb(48, 48, 138); 
+  color: #30f48a; 
+  border: 2px solid #30f48a;
+  z-index: 1;
+  position: relative;
+}
+  
+.button1:hover {
+  background-color:  #30f48a;
+  color: rgb(60, 60, 126);
+}
+
+.button2 {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: medium;
+  background-color: rgb(48, 48, 138); 
+  color: #30f48a; 
+  border: 2px solid #30f48a;
+  z-index: 1;
+  position: relative;
+}
+  
+.button2:hover {
+  background-color:  #30f48a;
+  color: rgb(48, 48, 138);
+}
+  
+button {
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.button3 {
+  margin-left: 2%;
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: medium;
+  z-index: 1;
+  position: absolute;
+  margin-right: 2%;
+  top: 0;
+  right: 0;
+}
+
+.button3:hover {
+  border: 2px solid #000000;
+}
+
+.Btn_lang{
+background: none;
+border: 2px solid white;
+color: #ffffff;
+}
+.Btn_lang:hover {
+  cursor: default;
+}
+.point
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.point .label
+{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #00000077;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Sulphur Point', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-size: medium;
+    cursor: default;
+    transform: scale(0, 0);
+    transition: transform 0.4s;
+}
+
+.point .text
+{
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #00000077;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: medium;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+}
+
+.point:hover .text
+{
+    opacity: 1;
+}
+
+.point.visible .label
+{
+    transform: scale(1, 1);
+}
+
+/* CSS du tableau */
+table {
+  border-collapse:collapse;
+}
+  
+td {
+  border: 1px solid #333333;padding: 2px 5px 2px 5px;text-align:center;
+}
+  
+#box_vide{
+  border:rgb(255, 255, 255);
+}
+  
+#php_img{
+  margin-bottom: 21px;
+}
+
+/* loader */
+.ld{
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 2px;
+  text-align: center;
+  font-size: xx-large;
+  color: whitesmoke;
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  text-align: center;
+  font-size: xx-large;
+  color: whitesmoke;
+}
+
+/* CSS pour les différents écrans */
+@media only screen and (max-width: 700px) {
+  .projet{
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 5%;
+    width: 93vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pro_left{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  
+  .pro_right{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    justify-content: center;
+  }
+  
+  .right_bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+  }
+  
+  .bottom.left{
+    display: flex;
+    flex-direction: row;
+  }
+}

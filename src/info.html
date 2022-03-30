@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio-À propos</title>
+        <link rel="icon" type="image/png" href="static/LOGO.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./style.css">
+        <script type="module" src="./script_info.js" defer></script>
+        <script src="./script_1.js" defer></script>
+    </head>
+
+    <body>
+        <canvas class="webgl"></canvas>
+
+        <!-- Button pour changer de langue -->
+        <button class="button1" onclick="myFunction()">French</button>
+        <button class="button2" onclick="myFunction2()">English</button>
+        <a href="index.html"><button id="idbtn" class="button3">Retour</button></a>
+        <br><br>
+
+        <!-- Premier section partie a propos -->
+        <section class="section">
+            <h1 id="id10">À propos de moi</h1>
+            <h2 id="id20">Bonjour et bienvenue sur mon portfolio, je m'appelle Thomas et je suis un étudiant de 19 ans.</h2>
+            <h2 id="id21">Je suis actuellement en première année d'études d'informatiques à Lyon.</h2>
+            <h2 id="id25">Étant passioné par les nouvelles technologies et le développement, je serai très heureux de pouvoir vous aider dans vos futurs projets.</h2>
+            <h2 id="id22">Si vous souhaitez en savoir plus sur moi, mes compétences et mes différents projets ou tout simplement comment me contacter, n'hésitez pas à explorer ce site et à me faire des retours.</h2>
+        </section>
+
+        <!-- Deuxième section partie compétences -->
+        <br>
+        <section class="section">
+            <h1 id="id11">Mes compétences</h1>
+            <!-- Tableau des compétences -->
+            <table>
+                <tr>
+                    <td id="box_vide"></td>
+                    <td id="id30">Langages</td>
+                    <td id="id31">Logiciels</td>
+                </tr>
+                <tr>
+                    <td id="id32">
+                        Bonne maîtrise
+                    </td>
+                    <td>
+                        <img src="static/skills/css.png" alt='css' width="55px">
+                        <img src="static/skills/html.png" alt='htlm' width="79px">
+                        <img src="static/skills/python.png" alt='python' width="100px">
+                        <img src="static/skills/sql.png" alt='sql' width="80px">
+                    </td>
+                    <td>
+                        <img src="static/skills/Blender.png" alt='blender' width="85px">
+                        <img src="static/skills/Visual_.png" alt='visual studio code' width="69px">
+                        <img src="static/skills/Office.png" alt='microsoft office' width="62px">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="id33">
+                        Maîtrise partielle
+                    </td>
+                    <td>
+                        <img src="static/skills/javascript.jpg.png" alt='java script' width="101px">
+                        <img id="php_img" src="static/skills/PHP.png" alt='php' width="100px">
+                        <img src="static/skills/three.png" alt='three js' width="90px">
+                    </td>
+                    <td>
+                        <img src="static/skills/photo.png" alt='phtoshop' width="74px">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Troisième section me contacter -->
+        <br>
+        <section class="section">
+            <h1 id="id12">Me contacter</h1>
+            <h2 id="id23">Par mail :</h2>
+            <h3>thomas.deschampt@gmail.com</h3>
+            <h2 id="id24">Via linkedin :</h2>
+            <h3><a href="https://www.linkedin.com/in/thomas-deschampt-19843b224/" target="_blank" rel="noopener noreferrer"><img src="static/in.png" width="30px"></a></h3>
+            <h2 id="id26">Mon Github :</h2>
+            <h3><a href="https://github.com/ThomasDeschampt" target="_blank" rel="noopener noreferrer"><img src="static/25231.png" width="30px"></a></h3>
+        </section>
+    </body>
+</html>

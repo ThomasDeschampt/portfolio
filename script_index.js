@@ -276,8 +276,8 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
     controls.update()
             
-    if(sceneReady)
-    {
+//     if(sceneReady)
+//     {
         for(const point of points)
         {
             const screenPosition = point.position.clone()
@@ -302,7 +302,7 @@ const tick = () =>
                 {
                     point.element.classList.add('visible')
                 }
-            }
+//             }
                 
             const translateX = screenPosition.x * sizes.width * 0.5
             const translateY = - screenPosition.y * sizes.height * 0.5

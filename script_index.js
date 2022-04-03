@@ -51,7 +51,7 @@ const textureLoader = new THREE.TextureLoader()
             
 // Draco loader
 const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath('src/static/draco/')
+dracoLoader.setDecoderPath('/src/static/draco/')
             
 // GLTF loader
 const gltfLoader = new GLTFLoader()

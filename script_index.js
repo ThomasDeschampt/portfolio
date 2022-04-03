@@ -68,30 +68,30 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
             
 //overlay
-const overlayGeometry = new THREE.PlaneGeometry(2, 2, 1, 1)
-const overlayMaterial = new THREE.ShaderMaterial({
-    transparent: true,
-    uniforms:
-    {
-        uAlpha: { value: 1 }
-    },
-    vertexShader: `
-        void main()
-        {
-            gl_Position = vec4(position, 1.0);
-        }
-    `,
-    fragmentShader: `
-        uniform float uAlpha;
+// const overlayGeometry = new THREE.PlaneGeometry(2, 2, 1, 1)
+// const overlayMaterial = new THREE.ShaderMaterial({
+//     transparent: true,
+//     uniforms:
+//     {
+//         uAlpha: { value: 1 }
+//     },
+//     vertexShader: `
+//         void main()
+//         {
+//             gl_Position = vec4(position, 1.0);
+//         }
+//     `,
+//     fragmentShader: `
+//         uniform float uAlpha;
             
-        void main()
-        {
-            gl_FragColor = vec4(0.0, 0.0, 0.0, uAlpha);
-        }
-    `
-})
-const overlay = new THREE.Mesh(overlayGeometry, overlayMaterial)
-scene.add(overlay)
+//         void main()
+//         {
+//             gl_FragColor = vec4(0.0, 0.0, 0.0, uAlpha);
+//         }
+//     `
+// })
+// const overlay = new THREE.Mesh(overlayGeometry, overlayMaterial)
+// scene.add(overlay)
             
 //texture
 const bakedtexture = textureLoader.load('/src/static/p_final_bake.jpg')

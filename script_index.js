@@ -1,7 +1,7 @@
 import * as THREE from '/src/three.module.js'
-// import { OrbitControls } from '/src/OrbitControls.js'
-// import { GLTFLoader } from '/src/GLTFLoader.js'
-// import { DRACOLoader } from '/src/DRACOLoader.js'
+import { OrbitControls } from '/src/OrbitControls.js'
+import { GLTFLoader } from '/src/GLTFLoader.js'
+import { DRACOLoader } from '/src/DRACOLoader.js'
 // import { gsap } from 'gsap'
 
             

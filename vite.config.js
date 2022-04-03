@@ -16,7 +16,7 @@ module.exports = defineConfig({
           "/src/loaders/GLTFLoader.js",
           "/src/loaders/DRACOLoader.js",
           "gsap",
-          "srcipt_info.js",
+          "script_info.js",
         ],
     }
   }

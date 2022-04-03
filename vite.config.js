@@ -12,6 +12,7 @@ module.exports = defineConfig({
       },
         external: [
           "/three",
+          "three",
           "/node_modules/three/build/three.module.js",
           "three/build/three.module.js",
           "three/examples/jsm/controls/OrbitControls.js",

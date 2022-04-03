@@ -12,13 +12,10 @@ module.exports = defineConfig({
       },
         external: [
           "/src/three.module.js",
-          "/node_modules/three/build/three.module.js",
-          "three/build/three.module.js",
-          "three/examples/jsm/controls/OrbitControls.js",
-          "three/examples/jsm/loaders/GLTFLoader.js",
-          "three/examples/jsm/loaders/DRACOLoader.js",
+          "/src/controls/OrbitControls.js",
+          "/src/loaders/GLTFLoader.js",
+          "/src/loaders/DRACOLoader.js",
           "gsap",
-          "script_info.js",
         ],
     }
   }

@@ -11,7 +11,7 @@ module.exports = defineConfig({
         pro: resolve(__dirname, 'projet.html'),
       },
         external: [
-          "src/static/three.module.js",
+          "/src/static/three.module.js",
           "/node_modules/three/build/three.module.js",
           "three/build/three.module.js",
           "three/examples/jsm/controls/OrbitControls.js",

@@ -94,15 +94,15 @@ const overlay = new THREE.Mesh(overlayGeometry, overlayMaterial)
 scene.add(overlay)
             
 //texture
-const bakedtexture = textureLoader.load('src/static/p_final_bake.jpg')
-const poster = textureLoader.load('src/static/image as plane/zoro.jpg')
-const ecran1 = textureLoader.load('src/static/image as plane/ecranport.jpg')
-const ecran2 = textureLoader.load('src/static/image as plane/ecrancrypto.jpg')
-const mangach = textureLoader.load('src/static/image as plane/chainsaw.jpg')
-const mangaop = textureLoader.load('src/static/image as plane/one_piece.jpg')
-const mangahx = textureLoader.load('src/static/image as plane/hunter.jpg')
-const mangapr = textureLoader.load('src/static/image as plane/prisonnier.jpg')
-const mangafi = textureLoader.load('src/static/image as plane/fire.jpg')
+const bakedtexture = textureLoader.load('/src/static/p_final_bake.jpg')
+const poster = textureLoader.load('/src/static/image as plane/zoro.jpg')
+const ecran1 = textureLoader.load('/src/static/image as plane/ecranport.jpg')
+const ecran2 = textureLoader.load('/src/static/image as plane/ecrancrypto.jpg')
+const mangach = textureLoader.load('/src/static/image as plane/chainsaw.jpg')
+const mangaop = textureLoader.load('/src/static/image as plane/one_piece.jpg')
+const mangahx = textureLoader.load('/src/static/image as plane/hunter.jpg')
+const mangapr = textureLoader.load('/src/static/image as plane/prisonnier.jpg')
+const mangafi = textureLoader.load('/src/static/image as plane/fire.jpg')
 bakedtexture.flipY = false
             
 //material
@@ -110,7 +110,7 @@ const bakedMaterial = new THREE.MeshBasicMaterial({map : bakedtexture})
             
 //model
 gltfLoader.load(
-    'src/static/page finalee.glb',
+    '/src/static/page finalee.glb',
     (gltf) =>
     {
         const bakedmesh = gltf.scene.children.find(children => children.name === 'bakee')

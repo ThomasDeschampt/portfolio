@@ -1,4 +1,4 @@
-import * as THREE from '/src/static/three.module.js'
+import * as THREE from '/src/three.module.js'
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 

@@ -15,6 +15,7 @@ module.exports = defineConfig({
           "/src/controls/OrbitControls.js",
           "/src/loaders/GLTFLoader.js",
           "/src/loaders/DRACOLoader.js",
+          "/three.module.js",
 //           "gsap",
           "script_info.js",
         ],

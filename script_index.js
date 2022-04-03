@@ -2,49 +2,49 @@ import * as THREE from '/src/three.module.js'
 import { OrbitControls } from '/src/OrbitControls.js'
 import { GLTFLoader } from '/src/GLTFLoader.js'
 import { DRACOLoader } from '/src/DRACOLoader.js'
-import { gsap } from 'gsap'
+// import { gsap } from 'gsap'
 
             
-//loader
-const loadingBarElement = document.querySelector('.loading')
-const ld = document.querySelector('.ld')
+// //loader
+// const loadingBarElement = document.querySelector('.loading')
+// const ld = document.querySelector('.ld')
             
-let sceneReady = false
-const loadingManager = new THREE.LoadingManager(
-// Loaded
-    () =>
-    {
-        window.setTimeout(() =>
-        {
-            gsap.to(overlayMaterial.uniforms.uAlpha, { duration: 2, value: 0, delay: 0 })
-        }, 500)  
-        window.setTimeout(() =>
-        {
-            sceneReady = true
-        }, 2000)
-    },
+// let sceneReady = false
+// const loadingManager = new THREE.LoadingManager(
+// // Loaded
+//     () =>
+//     {
+//         window.setTimeout(() =>
+//         {
+//             gsap.to(overlayMaterial.uniforms.uAlpha, { duration: 2, value: 0, delay: 0 })
+//         }, 500)  
+//         window.setTimeout(() =>
+//         {
+//             sceneReady = true
+//         }, 2000)
+//     },
             
-    // Progress
-    (itemUrl, itemsLoaded, itemsTotal) =>
-    {
-        const progressRatio = itemsLoaded / itemsTotal
-        if (progressRatio <= 0.30 )
-        {
-            loadingBarElement.innerHTML = "."
-        }else if (progressRatio <= 0.60 )
-        {
-            loadingBarElement.innerHTML = ".."
-        }else if (progressRatio <= 0.95 )
-        {
-                        loadingBarElement.innerHTML = "..."
-        }
-        if (progressRatio == 1)
-        {
-            loadingBarElement.innerHTML = ""
-            ld.innerHTML = ""
-        }
-    }
-)
+//     // Progress
+//     (itemUrl, itemsLoaded, itemsTotal) =>
+//     {
+//         const progressRatio = itemsLoaded / itemsTotal
+//         if (progressRatio <= 0.30 )
+//         {
+//             loadingBarElement.innerHTML = "."
+//         }else if (progressRatio <= 0.60 )
+//         {
+//             loadingBarElement.innerHTML = ".."
+//         }else if (progressRatio <= 0.95 )
+//         {
+//                         loadingBarElement.innerHTML = "..."
+//         }
+//         if (progressRatio == 1)
+//         {
+//             loadingBarElement.innerHTML = ""
+//             ld.innerHTML = ""
+//         }
+//     }
+// )
             
 const textureLoader = new THREE.TextureLoader(loadingManager)
             

@@ -46,14 +46,16 @@ import { DRACOLoader } from '/src/DRACOLoader.js'
 //     }
 // )
             
-const textureLoader = new THREE.TextureLoader(loadingManager)
+const textureLoader = new THREE.TextureLoader()
+      //loadingManager sa dans les paranthèses au dessus
             
 // Draco loader
 const dracoLoader = new DRACOLoader()
 dracoLoader.setDecoderPath('src/static/draco/')
             
 // GLTF loader
-const gltfLoader = new GLTFLoader(loadingManager)
+const gltfLoader = new GLTFLoader()
+//loadingManager
 gltfLoader.setDRACOLoader(dracoLoader)
             
 // Debug

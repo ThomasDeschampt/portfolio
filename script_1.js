@@ -40,8 +40,8 @@ function myFunction3() {
     document.getElementById("p212").innerText = "Projet 2 : En préparation"
     document.getElementById("p230").innerText = "Dans mon Portfolio, vous pourrez retrouver de nombreuses informations sur moi comme par exemple mes projets, mes compétences, ..."
     document.getElementById("p231").innerText = "Pour réaliser ce projet j'ai utilisé les langages HTML et CSS pour la conception et la mise en forme du site, JavaScript pour mettre en place certaines fonctionnalités (comme la traduction) et pour intégrer de la 3d sur le site grâce à THREE JS. J'ai aussi utilisé Blender pour modiliser tout les objets 3d présent sur le site."
-    document.getElementById("btn_try").innerText = "Essayez le "
-    document.getElementById("btn_try_p").innerText = "A venir "
+    document.getElementById("btn_try_p").innerText = "Essayez le "
+    document.getElementById("btn_try_pe").innerText = "A venir "
     document.getElementById("idbtn").innerText = "Retour"
 }
 
@@ -51,7 +51,7 @@ function myFunction4() {
     document.getElementById("p212").innerText = "Project 1 : In progress"
     document.getElementById("p230").innerText = "In my Portfolio, you will be able to find a lot of information about me such as my projects, my skills, ..."
     document.getElementById("p231").innerText = "To carry out this project I used HTML and CSS for the design and formatting of the site, JavaScript to set up certain features (like the translation) and to integrate 3d on the site thanks to THREE JS. I also used Blender to model all the 3d objects present on the site."
-    document.getElementById("btn_try").innerText = "Try it"
-    document.getElementById("btn_try_p").innerText = "Soon"
+    document.getElementById("btn_try_p").innerText = "Try it"
+    document.getElementById("btn_try_pe").innerText = "Soon"
     document.getElementById("idbtn").innerText = "Home"
 }

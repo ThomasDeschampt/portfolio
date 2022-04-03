@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { gsap } from 'gsap'
+
             
 //loader
 const loadingBarElement = document.querySelector('.loading')
@@ -49,7 +50,7 @@ const textureLoader = new THREE.TextureLoader(loadingManager)
             
 // Draco loader
 const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath('static/draco/')
+dracoLoader.setDecoderPath('src/static/draco/')
             
 // GLTF loader
 const gltfLoader = new GLTFLoader(loadingManager)
@@ -91,15 +92,15 @@ const overlay = new THREE.Mesh(overlayGeometry, overlayMaterial)
 scene.add(overlay)
             
 //texture
-const bakedtexture = textureLoader.load('static/p_final_bake.jpg')
-const poster = textureLoader.load('static/image as plane/zoro.jpg')
-const ecran1 = textureLoader.load('static/image as plane/ecranport.jpg')
-const ecran2 = textureLoader.load('static/image as plane/ecrancrypto.jpg')
-const mangach = textureLoader.load('static/image as plane/chainsaw.jpg')
-const mangaop = textureLoader.load('static/image as plane/one_piece.jpg')
-const mangahx = textureLoader.load('static/image as plane/hunter.jpg')
-const mangapr = textureLoader.load('static/image as plane/prisonnier.jpg')
-const mangafi = textureLoader.load('static/image as plane/fire.jpg')
+const bakedtexture = textureLoader.load('src/static/p_final_bake.jpg')
+const poster = textureLoader.load('src/static/image as plane/zoro.jpg')
+const ecran1 = textureLoader.load('src/static/image as plane/ecranport.jpg')
+const ecran2 = textureLoader.load('src/static/image as plane/ecrancrypto.jpg')
+const mangach = textureLoader.load('src/static/image as plane/chainsaw.jpg')
+const mangaop = textureLoader.load('src/static/image as plane/one_piece.jpg')
+const mangahx = textureLoader.load('src/static/image as plane/hunter.jpg')
+const mangapr = textureLoader.load('src/static/image as plane/prisonnier.jpg')
+const mangafi = textureLoader.load('src/static/image as plane/fire.jpg')
 bakedtexture.flipY = false
             
 //material
@@ -107,7 +108,7 @@ const bakedMaterial = new THREE.MeshBasicMaterial({map : bakedtexture})
             
 //model
 gltfLoader.load(
-    'static/page finalee.glb',
+    'src/static/page finalee.glb',
     (gltf) =>
     {
         const bakedmesh = gltf.scene.children.find(children => children.name === 'bakee')

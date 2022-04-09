@@ -16,7 +16,7 @@ module.exports = defineConfig({
           "/src/loaders/GLTFLoader.js",
           "/src/loaders/DRACOLoader.js",
           "/three.module.js",
-          "/src/all.js",
+          "/src/gsap/all.js",
           "script_info.js",
         ],
     }

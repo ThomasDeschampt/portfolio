@@ -6,56 +6,54 @@ import { gsap } from '/src/gsap/all.js'
 
             
 // //loader
-// const loadingBarElement = document.querySelector('.loading')
-// const ld = document.querySelector('.ld')
+const loadingBarElement = document.querySelector('.loading')
+const ld = document.querySelector('.ld')
             
 let sceneReady = true
-// const loadingManager = new THREE.LoadingManager(
-// // Loaded
-//     () =>
-//     {
-//         window.setTimeout(() =>
-//         {
-//             gsap.to(overlayMaterial.uniforms.uAlpha, { duration: 2, value: 0, delay: 0 })
-//         }, 500)  
-//         window.setTimeout(() =>
-//         {
-//             sceneReady = true
-//         }, 2000)
-//     },
+const loadingManager = new THREE.LoadingManager(
+// Loaded
+    () =>
+    {
+        window.setTimeout(() =>
+        {
+            gsap.to(overlayMaterial.uniforms.uAlpha, { duration: 2, value: 0, delay: 0 })
+        }, 500)  
+        window.setTimeout(() =>
+        {
+            sceneReady = true
+        }, 2000)
+    },
             
-//     // Progress
-//     (itemUrl, itemsLoaded, itemsTotal) =>
-//     {
-//         const progressRatio = itemsLoaded / itemsTotal
-//         if (progressRatio <= 0.30 )
-//         {
-//             loadingBarElement.innerHTML = "."
-//         }else if (progressRatio <= 0.60 )
-//         {
-//             loadingBarElement.innerHTML = ".."
-//         }else if (progressRatio <= 0.95 )
-//         {
-//                         loadingBarElement.innerHTML = "..."
-//         }
-//         if (progressRatio == 1)
-//         {
-//             loadingBarElement.innerHTML = ""
-//             ld.innerHTML = ""
-//         }
-//     }
-// )
+    // Progress
+    (itemUrl, itemsLoaded, itemsTotal) =>
+    {
+        const progressRatio = itemsLoaded / itemsTotal
+        if (progressRatio <= 0.30 )
+        {
+            loadingBarElement.innerHTML = "."
+        }else if (progressRatio <= 0.60 )
+        {
+            loadingBarElement.innerHTML = ".."
+        }else if (progressRatio <= 0.95 )
+        {
+                        loadingBarElement.innerHTML = "..."
+        }
+        if (progressRatio == 1)
+        {
+            loadingBarElement.innerHTML = ""
+            ld.innerHTML = ""
+        }
+    }
+)
             
-const textureLoader = new THREE.TextureLoader()
-      //loadingManager sa dans les paranthèses au dessus
+const textureLoader = new THREE.TextureLoader(loadingManager)
             
 // Draco loader
 const dracoLoader = new DRACOLoader()
 dracoLoader.setDecoderPath('/src/static/draco/')
             
 // GLTF loader
-const gltfLoader = new GLTFLoader()
-//loadingManager
+const gltfLoader = new GLTFLoader(loadingManager)
 gltfLoader.setDRACOLoader(dracoLoader)
             
 // Debug
@@ -68,30 +66,30 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
             
 //overlay
-// const overlayGeometry = new THREE.PlaneGeometry(2, 2, 1, 1)
-// const overlayMaterial = new THREE.ShaderMaterial({
-//     transparent: true,
-//     uniforms:
-//     {
-//         uAlpha: { value: 1 }
-//     },
-//     vertexShader: `
-//         void main()
-//         {
-//             gl_Position = vec4(position, 1.0);
-//         }
-//     `,
-//     fragmentShader: `
-//         uniform float uAlpha;
+const overlayGeometry = new THREE.PlaneGeometry(2, 2, 1, 1)
+const overlayMaterial = new THREE.ShaderMaterial({
+    transparent: true,
+    uniforms:
+    {
+        uAlpha: { value: 1 }
+    },
+    vertexShader: `
+        void main()
+        {
+            gl_Position = vec4(position, 1.0);
+        }
+    `,
+    fragmentShader: `
+        uniform float uAlpha;
             
-//         void main()
-//         {
-//             gl_FragColor = vec4(0.0, 0.0, 0.0, uAlpha);
-//         }
-//     `
-// })
-// const overlay = new THREE.Mesh(overlayGeometry, overlayMaterial)
-// scene.add(overlay)
+        void main()
+        {
+            gl_FragColor = vec4(0.0, 0.0, 0.0, uAlpha);
+        }
+    `
+})
+const overlay = new THREE.Mesh(overlayGeometry, overlayMaterial)
+scene.add(overlay)
             
 //texture
 const bakedtexture = textureLoader.load('/src/static/p_final_bake.jpg')

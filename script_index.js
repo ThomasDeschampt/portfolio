@@ -9,7 +9,7 @@ import { gsap } from '/src/gsap/all.js'
 const loadingBarElement = document.querySelector('.loading')
 const ld = document.querySelector('.ld')
             
-let sceneReady = true
+let sceneReady = false
 const loadingManager = new THREE.LoadingManager(
 // Loaded
     () =>

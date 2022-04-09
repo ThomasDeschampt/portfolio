@@ -39,7 +39,7 @@ function myFunction3() {
     document.getElementById("p211").innerText = "Projet 1 : Mon Portfolio"
     document.getElementById("p212").innerText = "Projet 2 : En préparation"
     document.getElementById("p230").innerText = "Dans mon Portfolio, vous pourrez retrouver de nombreuses informations sur moi comme par exemple mes projets, mes compétences, ..."
-    document.getElementById("p231").innerText = "Pour réaliser ce projet j'ai utilisé les langages HTML et CSS pour la conception et la mise en forme du site, JavaScript pour mettre en place certaines fonctionnalités (comme la traduction) et pour intégrer de la 3d sur le site grâce à THREE JS. J'ai aussi utilisé Blender pour modiliser tous les objets 3d présents sur le site."
+    document.getElementById("p231").innerText = "Pour réaliser ce projet j'ai utilisé les langages HTML et CSS pour la conception et la mise en forme du site, JavaScript pour mettre en place certaines fonctionnalités (comme la traduction) et pour intégrer de la 3d sur le site grâce à THREE JS. J'ai aussi utilisé Blender pour modéliser tous les objets 3d présents sur le site."
     document.getElementById("btn_try_p").innerText = "Essayez le "
     document.getElementById("btn_try_pe").innerText = "A venir "
     document.getElementById("idbtn").innerText = "Retour"

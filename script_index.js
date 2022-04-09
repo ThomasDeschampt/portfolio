@@ -25,25 +25,25 @@ const loadingManager = new THREE.LoadingManager(
     },
             
     // Progress
-//     (itemUrl, itemsLoaded, itemsTotal) =>
-//     {
-//         const progressRatio = itemsLoaded / itemsTotal
-//         if (progressRatio <= 0.30 )
-//         {
-//             loadingBarElement.innerHTML = "."
-//         }else if (progressRatio <= 0.60 )
-//         {
-//             loadingBarElement.innerHTML = ".."
-//         }else if (progressRatio <= 0.95 )
-//         {
-//                         loadingBarElement.innerHTML = "..."
-//         }
-//         if (progressRatio == 1)
-//         {
-//             loadingBarElement.innerHTML = ""
-//             ld.innerHTML = ""
-//         }
-//     }
+    (itemUrl, itemsLoaded, itemsTotal) =>
+    {
+        const progressRatio = itemsLoaded / itemsTotal
+        if (progressRatio <= 0.30 )
+        {
+            loadingBarElement.innerHTML = "."
+        }else if (progressRatio <= 0.60 )
+        {
+            loadingBarElement.innerHTML = ".."
+        }else if (progressRatio <= 0.95 )
+        {
+                        loadingBarElement.innerHTML = "..."
+        }
+        if (progressRatio == 1)
+        {
+            loadingBarElement.innerHTML = ""
+            ld.innerHTML = ""
+        }
+    }
 )
             
 const textureLoader = new THREE.TextureLoader(loadingManager)

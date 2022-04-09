@@ -43,7 +43,7 @@ const loadingManager = new THREE.LoadingManager(
 //             loadingBarElement.innerHTML = ""
 //             ld.innerHTML = ""
 //         }
-    }
+//     }
 )
             
 const textureLoader = new THREE.TextureLoader(loadingManager)

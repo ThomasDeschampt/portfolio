@@ -2,7 +2,7 @@ function myFunction() {
     document.getElementById("id10").innerHTML = "À propos de moi"
     document.getElementById("id11").innerHTML = "Mes compétences"
     document.getElementById("id12").innerHTML = "Me contacter"
-    document.getElementById("id20").innerText = "Bonjour et bienvenue sur mon portfolio, je m'appelle Thomas et je suis un étudiant de 19 ans.";
+    document.getElementById("id20").innerText = "Bonjour et bienvenue sur mon portfolio, je m'appelle Thomas Deschampt et je suis un étudiant de 19 ans.";
     document.getElementById("id21").innerText = "Je suis actuellement en première année d'études d'informatiques à Lyon.";
     document.getElementById("id22").innerText = "Si vous souhaitez en savoir plus sur moi, mes compétences et mes différents projets ou tout simplement comment me contacter, n'hésitez pas à explorer ce site et à me faire des retours. ";
     document.getElementById("id30").innerText = "Langages"
@@ -20,7 +20,7 @@ function myFunction2() {
     document.getElementById("id10").innerHTML = "About me"
     document.getElementById("id11").innerHTML = "My skills"
     document.getElementById("id12").innerHTML = "Contact me"
-    document.getElementById("id20").innerText = "Hello and welcome on my portfilio, my name is Thomas and I'm a 19 years old studient.";
+    document.getElementById("id20").innerText = "Hello and welcome on my portfilio, my name is Thomas Deschampt and I'm a 19 years old studient.";
     document.getElementById("id21").innerText = "I'm currently in my first year studying computer sciences in Lyon (France).";
     document.getElementById("id22").innerText = "If you want to discover more about me, my skills and my different projects or just to know how to contact me, do not hesitate to explore this website and give me your feedback.  ";
     document.getElementById("id30").innerText = "Languages"
